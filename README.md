@@ -25,9 +25,10 @@ Therefore the folder name (and the c file name) must obey the naming rule.
 
 # example of using run.py
 
-python3 run.py -m -f 004 -p
-
-python3 run.py -m -f 005
+```
+$ python3 run.py -m -f 004 -p
+$ python3 run.py -m -f 005
+```
 
 # To change the sweeping parameters
 
