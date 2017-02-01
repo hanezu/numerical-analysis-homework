@@ -13,16 +13,14 @@ ALL python scripts are written in python3, and may not be able to work in python
 
 ## options:
 
-  -m: make the c file.
+-m: make the c file.
 
 
-  -f: take the next argument as the folder of code to run.
+-f: take the next argument as the folder of code to run.
+enter the full name, or the first 3 digits would be enough.
+Therefore the folder name (and the c file name) must obey the naming rule.
 
-      enter the full name, or the first 3 digits would be enough.
-
-      Therefore the folder name (and the c file name) must obey the naming rule.
-
-  -p: plot the result picture when the program terminate.  
+-p: plot the result picture when the program terminate.  
 
 
 # example of using run.py
