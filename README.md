@@ -3,27 +3,31 @@
 Created 004 for problem 1 and 005 for problem 2.
 003 was also created for a simpler version of problem 1, but it was not completed.
 
-The notes and report questions are also included under the root directory.
+The notes, report questions and my report are also included under the root directory.
 
-# To run a particular program 
+# To run 
 
-Execute run.py under python3 to run a particular program by calling its folder name.
+Execute `run.py` under `python3` to run a particular program by calling its folder name.
 
-ALL python scripts are written in python3, and may not be able to work in python2.
+The result would be save in `output.dat`.
 
-## options:
+*All* python scripts are written in `python3`, and may not be able to work in `python2`.
 
--m: make the c file.
+## Options
+
+`-m` make the c file.
 
 
--f: take the next argument as the folder of code to run.
+`-f` take the next argument as the folder of code to run.
+
 enter the full name, or the first 3 digits would be enough.
+
 Therefore the folder name (and the c file name) must obey the naming rule.
 
--p: plot the result picture when the program terminate.  
+`-p` plot the result picture when the program terminate.  
 
 
-# example of using run.py
+# Example of using run.py
 
 ```
 $ python3 run.py -m -f 004 -p
@@ -32,7 +36,7 @@ $ python3 run.py -m -f 005
 
 # To change the sweeping parameters
 
-To change the parameter of the number of splitting in space (h) or in time (tau), change the setting in the c file. These setting are mainly included in the function "main".
+To change the parameter of the number of splitting in space ($h$) or in time ($\tau$), change the setting in the c file. These setting are mainly included in the function "main".
 
 It is also possible to run the program with default setting of parameter zone and splitting.
 
