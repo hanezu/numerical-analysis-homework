@@ -1,4 +1,20 @@
-# from script.run import run
+# run the particular program by calling its folder name
+# ALL python scripts are written in python3, and may not be able to work in python2.
+
+# options:
+#   -m: make the c file.
+#   -f: take the next argument as the folder of code to run.
+#       enter the full name, or the first 3 digits would be enough.
+#       Therefore the folder name (and the c file name) must obey the naming rule.
+#   -p: plot the result picture when the program terminate.  
+
+# example of running this script:
+# python3 run.py -m -f 004 -p
+# python3 run.py -m -f 005
+
+
+
+
 import getopt
 import os
 import pandas as pd

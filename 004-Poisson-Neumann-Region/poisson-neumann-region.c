@@ -385,10 +385,12 @@ int main(int argc, char *argv[]) {
         test();
     } else {
 //        int N_array[] = {10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190};
-        int N_array[] = {100};
+//        int N_array[] = {100};
+        int N_array[] = {10,20,30,40,50,60,70,80,90};
+
         int len_N_array = sizeof(N_array)/ sizeof(N_array[0]);
         fr = fopen("error_fit.csv", "w+");
-        fprintf(fr,"iter_times\tN\th\terror\n");
+        fprintf(fr,"iter_times N h error\n");
         for(int i = 0; i < len_N_array; i++){
             run_main(N_array[i]);
         }
@@ -562,7 +564,7 @@ void run_main(int split_times) {
     }
 //    double gosa_norm = sqrt(gosa) / vec_len;
     double gosa_norm = sqrt(gosa) * sqrt(h);
-    fprintf(stderr, "N = %d\terror (Euclidean Norm / vector length) = %e\n", N, gosa_norm);
+    fprintf(stderr, "N = %d\terror = %e\n", N, gosa_norm);
     fprintf(fr, "%d %e %e\n",N,h, gosa_norm);
 
     // // // // // // // // // // * 重 要 * // // // // // // // // // //

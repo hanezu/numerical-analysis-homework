@@ -168,8 +168,8 @@ int main(int argc, char *argv[]) {
         fr = fopen("error_fit.csv", "w+");
         fprintf(fr, "N r h tau error\n");
 
-        for (int i = 10; i <= 100; i += 100) {
-            for (int j = 10; j <= 100; j += 100) {
+        for (int i = 10; i <= 100; i += 10) {
+            for (int j = 10; j <= 100; j += 10) {
                 run_main(i, j);
             }
         }
